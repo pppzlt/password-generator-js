@@ -34,10 +34,17 @@ function generatePassword() {
 function input() {
   //get length input
   pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
+  // check if inpt is a number
+  while (isNaN(pLength)) {
+    window.alert('Input must be a number')
+    pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
+  }
+  // check if input is between 8 and 128
   while (pLength < 8 || pLength > 128) {
     window.alert('Invalid password length');
     pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
   }
+  
 
   //get options input
   while (!type[0] && !type[1] && !type[2] && !type[3]) {
