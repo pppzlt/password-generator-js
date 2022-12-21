@@ -52,7 +52,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Lantao Zhang - lantaook@gmail.com
 
-Project Link: [https://pppzlt.github.io/portfolio-summary/](https://pppzlt.github.io/portfolio-summary/)
+Project Link: [https://pppzlt.github.io/password-generator-js/](https://pppzlt.github.io/password-generator-js/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

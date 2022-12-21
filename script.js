@@ -60,6 +60,8 @@ function input() {
 }
 
 function randomPassword() {
+  //reset poll everytime.
+  poll = '';
   for (let i = 0; i < 4; i++) {
     if (type[i]) {
       poll += array[i];
