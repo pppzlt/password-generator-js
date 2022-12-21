@@ -34,17 +34,11 @@ function generatePassword() {
 function input() {
   //get length input
   pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
-  if (pLength !== undefined) {
-    while (pLength < 8 || pLength > 128) {
-      window.alert('Invalid password length');
-      pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
-    }
+  while (pLength < 8 || pLength > 128) {
+    window.alert('Invalid password length');
+    pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
   }
-  else {
-    while (pLength === undefined) {
-      pLength = window.prompt('How long do you want this password to be? (between 8 and 128)');
-    }
-  }
+
   //get options input
   while (!type[0] && !type[1] && !type[2] && !type[3]) {
     type[0] = window.confirm('Do you want lowercase letters in the password?');
@@ -71,7 +65,7 @@ function randomPassword() {
     actualPassword += poll.charAt(Math.floor(Math.random() * poll.length));
   }
   //reset options everytime
-  for (let i = 0; i < type.length;i++) {
+  for (let i = 0; i < type.length; i++) {
     type[i] = false;
   }
 }
